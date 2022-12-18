@@ -137,8 +137,10 @@ GameObject:
   - component: {fileID: 30703289}
   - component: {fileID: 30703288}
   - component: {fileID: 30703287}
+  - component: {fileID: 30703294}
   - component: {fileID: 30703292}
   - component: {fileID: 30703293}
+  - component: {fileID: 30703295}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -355,6 +357,37 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 2088101166}
+--- !u!114 &30703294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30703286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb488b0467094cb4f887eac9245e8c87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCrouching: 0
+  crouchSmoothTime: 0.5
+  crouchSpeed: 3
+  crouchHeight: 0.5
+--- !u!114 &30703295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30703286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03642fd0ce15e244be734b9466dc47e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxBobbingAmount: 0.1
+  bobbingSpeed: 2
+  bobbingHeight: 1
 --- !u!1 &172659320
 GameObject:
   m_ObjectHideFlags: 0
@@ -1182,6 +1215,7 @@ GameObject:
   - component: {fileID: 1575320642}
   - component: {fileID: 1575320641}
   - component: {fileID: 1575320640}
+  - component: {fileID: 1575320643}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -1288,6 +1322,21 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1575320643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575320638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03642fd0ce15e244be734b9466dc47e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxBobbingAmount: 0.1
+  bobbingSpeed: 2
+  bobbingHeight: 1
 --- !u!1 &1608884478
 GameObject:
   m_ObjectHideFlags: 0
@@ -1297,6 +1346,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1608884479}
+  - component: {fileID: 1608884480}
   m_Layer: 0
   m_Name: playerview
   m_TagString: Untagged
@@ -1320,6 +1370,21 @@ Transform:
   m_Father: {fileID: 30703291}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1608884480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608884478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f03642fd0ce15e244be734b9466dc47e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxBobbingAmount: 0.1
+  bobbingSpeed: 2
+  bobbingHeight: 1
 --- !u!1 &1661000539
 GameObject:
   m_ObjectHideFlags: 0
